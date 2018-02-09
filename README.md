@@ -13,10 +13,10 @@ this project shows method how use
 ++ Sound Recorde
 
 <h3>My Linkin</h3>
-<a href="http://www.linkedin.com/in/cheamseta"><img width="100px" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Linkin-01-128.png"/></a>
+<a target="_blank" href="http://www.linkedin.com/in/cheamseta"><img width="100px" src="https://cdn4.iconfinder.com/data/icons/social-media-pro-icons/1080/Linkin-01-128.png"/></a>
 
 <h3>My Profile</h3>
-<a href="http://cheamseta.herokuapp.com/"><img width="100px" src="https://graph.facebook.com/10205416160197106/picture?type=large&return_ssl_resources=1"/></a>
+<a target="_blank" href="http://cheamseta.herokuapp.com/"><img width="100px" src="https://graph.facebook.com/10205416160197106/picture?type=large&return_ssl_resources=1"/></a>
 
 ## Preview
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController">
+            <connections>
+                <outlet property="locationViewHolder" destination="dx2-j8-7O8" id="R0s-e5-SS8"/>
+                <outlet property="photoCollectionView" destination="bYi-hQ-fZm" id="Rna-bA-5m2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-j8-7O8">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wow-kG-bQe">
+                            <rect key="frame" x="285" y="7" width="30" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Wb6-XA-x70"/>
+                                <constraint firstAttribute="width" constant="30" id="uTX-NE-qs6"/>
+                            </constraints>
+                            <state key="normal" image="Pin"/>
+                            <connections>
+                                <action selector="locationAction:" destination="-1" eventType="touchUpInside" id="QXq-zU-eb3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="75b-PE-eQE"/>
+                        <constraint firstItem="wow-kG-bQe" firstAttribute="centerX" secondItem="dx2-j8-7O8" secondAttribute="centerX" id="fBL-Vd-LMn"/>
+                        <constraint firstItem="wow-kG-bQe" firstAttribute="top" secondItem="dx2-j8-7O8" secondAttribute="top" constant="7" id="sJq-IS-hrV"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bYi-hQ-fZm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5c8-T0-m28">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bYi-hQ-fZm" secondAttribute="trailing" id="18T-le-Q7v"/>
+                <constraint firstItem="bYi-hQ-fZm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HIF-cZ-6hE"/>
+                <constraint firstItem="dx2-j8-7O8" firstAttribute="top" secondItem="bYi-hQ-fZm" secondAttribute="bottom" constant="2" id="SuJ-dG-Hb9"/>
+                <constraint firstItem="bYi-hQ-fZm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eRK-BS-Tu5"/>
+                <constraint firstAttribute="bottom" secondItem="dx2-j8-7O8" secondAttribute="bottom" id="oyZ-XT-kjN"/>
+                <constraint firstAttribute="trailing" secondItem="dx2-j8-7O8" secondAttribute="trailing" id="rLw-Dw-gfn"/>
+                <constraint firstItem="dx2-j8-7O8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yHY-Yb-uvo"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Pin" width="20" height="28"/>
+    </resources>
+</document>

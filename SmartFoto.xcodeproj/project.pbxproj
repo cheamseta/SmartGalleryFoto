@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		338FB88C4A99FAEA88A67890 /* Pods_SmartFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9CE56B2AEFBFC08199B84E /* Pods_SmartFoto.framework */; };
+		FDD934F41D51EA4E00C1A04D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9349A1D51EA4D00C1A04D /* AppDelegate.m */; };
+		FDD934F51D51EA4E00C1A04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD9349B1D51EA4D00C1A04D /* Assets.xcassets */; };
+		FDD934F61D51EA4E00C1A04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD9349D1D51EA4D00C1A04D /* LaunchScreen.storyboard */; };
+		FDD934F71D51EA4E00C1A04D /* BasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934A01D51EA4D00C1A04D /* BasedViewController.m */; };
+		FDD934F81D51EA4E00C1A04D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934A21D51EA4D00C1A04D /* CollectionViewCell.m */; };
+		FDD934F91D51EA4E00C1A04D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934A31D51EA4D00C1A04D /* CollectionViewCell.xib */; };
+		FDD934FA1D51EA4E00C1A04D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDD934A41D51EA4D00C1A04D /* GoogleService-Info.plist */; };
+		FDD934FB1D51EA4E00C1A04D /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934A61D51EA4D00C1A04D /* HeaderCollectionReusableView.m */; };
+		FDD934FC1D51EA4E00C1A04D /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934A71D51EA4D00C1A04D /* HeaderCollectionReusableView.xib */; };
+		FDD934FD1D51EA4E00C1A04D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934A81D51EA4D00C1A04D /* main.m */; };
+		FDD934FE1D51EA4E00C1A04D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934AA1D51EA4D00C1A04D /* MapViewController.m */; };
+		FDD934FF1D51EA4E00C1A04D /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934AB1D51EA4D00C1A04D /* MapViewController.xib */; };
+		FDD935001D51EA4E00C1A04D /* Photobook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDD934AD1D51EA4D00C1A04D /* Photobook.xcdatamodeld */; };
+		FDD935011D51EA4E00C1A04D /* PhotoSound.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934B01D51EA4D00C1A04D /* PhotoSound.m */; };
+		FDD935021D51EA4E00C1A04D /* PhotoSound+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934B21D51EA4D00C1A04D /* PhotoSound+CoreDataProperties.m */; };
+		FDD935031D51EA4E00C1A04D /* QueryServices.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934B41D51EA4D00C1A04D /* QueryServices.m */; };
+		FDD935041D51EA4E00C1A04D /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934B61D51EA4E00C1A04D /* ResultViewController.m */; };
+		FDD935051D51EA4E00C1A04D /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934B71D51EA4E00C1A04D /* ResultViewController.xib */; };
+		FDD935061D51EA4E00C1A04D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934B91D51EA4E00C1A04D /* SearchViewController.m */; };
+		FDD935071D51EA4E00C1A04D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934BA1D51EA4E00C1A04D /* SearchViewController.xib */; };
+		FDD935081D51EA4E00C1A04D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934BD1D51EA4E00C1A04D /* Constant.m */; };
+		FDD935091D51EA4E00C1A04D /* HelperServices.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934BF1D51EA4E00C1A04D /* HelperServices.m */; };
+		FDD9350A1D51EA4E00C1A04D /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934C11D51EA4E00C1A04D /* Services.m */; };
+		FDD9350B1D51EA4E00C1A04D /* SoundDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934C31D51EA4E00C1A04D /* SoundDetailViewController.m */; };
+		FDD9350C1D51EA4E00C1A04D /* SoundRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934C51D51EA4E00C1A04D /* SoundRecordViewController.m */; };
+		FDD9350D1D51EA4E00C1A04D /* SoundRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934C61D51EA4E00C1A04D /* SoundRecordViewController.xib */; };
+		FDD9350E1D51EA4E00C1A04D /* JTSAnimatedGIFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934C91D51EA4E00C1A04D /* JTSAnimatedGIFUtility.m */; };
+		FDD9350F1D51EA4E00C1A04D /* JTSImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934CB1D51EA4E00C1A04D /* JTSImageInfo.m */; };
+		FDD935101D51EA4E00C1A04D /* JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934CD1D51EA4E00C1A04D /* JTSImageViewController.m */; };
+		FDD935111D51EA4E00C1A04D /* JTSSimpleImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934CF1D51EA4E00C1A04D /* JTSSimpleImageDownloader.m */; };
+		FDD935121D51EA4E00C1A04D /* UIApplication+JTSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934D11D51EA4E00C1A04D /* UIApplication+JTSImageViewController.m */; };
+		FDD935131D51EA4E00C1A04D /* UIImage+JTSImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934D31D51EA4E00C1A04D /* UIImage+JTSImageEffects.m */; };
+		FDD935141D51EA4E00C1A04D /* pausebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD934D51D51EA4E00C1A04D /* pausebutton.png */; };
+		FDD935151D51EA4E00C1A04D /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD934D61D51EA4E00C1A04D /* playbutton.png */; };
+		FDD935161D51EA4E00C1A04D /* SCWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934D81D51EA4E00C1A04D /* SCWaveformView.m */; };
+		FDD935171D51EA4E00C1A04D /* SYWaveformPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934DA1D51EA4E00C1A04D /* SYWaveformPlayerView.m */; };
+		FDD935191D51EA4E00C1A04D /* Tags.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934DE1D51EA4E00C1A04D /* Tags.m */; };
+		FDD9351A1D51EA4E00C1A04D /* Tags+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934E01D51EA4E00C1A04D /* Tags+CoreDataProperties.m */; };
+		FDD9351B1D51EA4E00C1A04D /* TagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934E21D51EA4E00C1A04D /* TagTableViewCell.m */; };
+		FDD9351C1D51EA4E00C1A04D /* TagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934E31D51EA4E00C1A04D /* TagTableViewCell.xib */; };
+		FDD9351D1D51EA4E00C1A04D /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934E51D51EA4E00C1A04D /* TagViewController.m */; };
+		FDD9351E1D51EA4E00C1A04D /* TagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934E61D51EA4E00C1A04D /* TagViewController.xib */; };
+		FDD935201D51EA4E00C1A04D /* TextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934E91D51EA4E00C1A04D /* TextCollectionViewCell.m */; };
+		FDD935211D51EA4E00C1A04D /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934EA1D51EA4E00C1A04D /* TextCollectionViewCell.xib */; };
+		FDD935221D51EA4E00C1A04D /* TitleCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934EC1D51EA4E00C1A04D /* TitleCollectionReusableView.m */; };
+		FDD935231D51EA4E00C1A04D /* TitleCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934ED1D51EA4E00C1A04D /* TitleCollectionReusableView.xib */; };
+		FDD935241D51EA4E00C1A04D /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934F01D51EA4E00C1A04D /* UIColor+HexColors.m */; };
+		FDD935251D51EA4E00C1A04D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD934F21D51EA4E00C1A04D /* ViewController.m */; };
+		FDD935261D51EA4E00C1A04D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD934F31D51EA4E00C1A04D /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB9CE56B2AEFBFC08199B84E /* Pods_SmartFoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartFoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A0E3C9B272A9A0FAD80BAC /* Pods-SmartFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFoto.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFoto/Pods-SmartFoto.release.xcconfig"; sourceTree = "<group>"; };
+		BAFE58BBB2F7B26203209A44 /* Pods-SmartFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartFoto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartFoto/Pods-SmartFoto.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD9347F1D51E9EA00C1A04D /* SmartFoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD934931D51E9EA00C1A04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD934991D51EA4D00C1A04D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDD9349A1D51EA4D00C1A04D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDD9349B1D51EA4D00C1A04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDD9349E1D51EA4D00C1A04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDD9349F1D51EA4D00C1A04D /* BasedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasedViewController.h; sourceTree = "<group>"; };
+		FDD934A01D51EA4D00C1A04D /* BasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasedViewController.m; sourceTree = "<group>"; };
+		FDD934A11D51EA4D00C1A04D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		FDD934A21D51EA4D00C1A04D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		FDD934A31D51EA4D00C1A04D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		FDD934A41D51EA4D00C1A04D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDD934A51D51EA4D00C1A04D /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		FDD934A61D51EA4D00C1A04D /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		FDD934A71D51EA4D00C1A04D /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		FDD934A81D51EA4D00C1A04D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDD934A91D51EA4D00C1A04D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FDD934AA1D51EA4D00C1A04D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FDD934AB1D51EA4D00C1A04D /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		FDD934AC1D51EA4D00C1A04D /* SmartFoto.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartFoto.pch; sourceTree = "<group>"; };
+		FDD934AE1D51EA4D00C1A04D /* Photobook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photobook.xcdatamodel; sourceTree = "<group>"; };
+		FDD934AF1D51EA4D00C1A04D /* PhotoSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSound.h; sourceTree = "<group>"; };
+		FDD934B01D51EA4D00C1A04D /* PhotoSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSound.m; sourceTree = "<group>"; };
+		FDD934B11D51EA4D00C1A04D /* PhotoSound+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoSound+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDD934B21D51EA4D00C1A04D /* PhotoSound+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotoSound+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDD934B31D51EA4D00C1A04D /* QueryServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryServices.h; sourceTree = "<group>"; };
+		FDD934B41D51EA4D00C1A04D /* QueryServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryServices.m; sourceTree = "<group>"; };
+		FDD934B51D51EA4E00C1A04D /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		FDD934B61D51EA4E00C1A04D /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		FDD934B71D51EA4E00C1A04D /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		FDD934B81D51EA4E00C1A04D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		FDD934B91D51EA4E00C1A04D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		FDD934BA1D51EA4E00C1A04D /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		FDD934BC1D51EA4E00C1A04D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		FDD934BD1D51EA4E00C1A04D /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		FDD934BE1D51EA4E00C1A04D /* HelperServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperServices.h; sourceTree = "<group>"; };
+		FDD934BF1D51EA4E00C1A04D /* HelperServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperServices.m; sourceTree = "<group>"; };
+		FDD934C01D51EA4E00C1A04D /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		FDD934C11D51EA4E00C1A04D /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
+		FDD934C21D51EA4E00C1A04D /* SoundDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDetailViewController.h; sourceTree = "<group>"; };
+		FDD934C31D51EA4E00C1A04D /* SoundDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundDetailViewController.m; sourceTree = "<group>"; };
+		FDD934C41D51EA4E00C1A04D /* SoundRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundRecordViewController.h; sourceTree = "<group>"; };
+		FDD934C51D51EA4E00C1A04D /* SoundRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundRecordViewController.m; sourceTree = "<group>"; };
+		FDD934C61D51EA4E00C1A04D /* SoundRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundRecordViewController.xib; sourceTree = "<group>"; };
+		FDD934C81D51EA4E00C1A04D /* JTSAnimatedGIFUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSAnimatedGIFUtility.h; sourceTree = "<group>"; };
+		FDD934C91D51EA4E00C1A04D /* JTSAnimatedGIFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSAnimatedGIFUtility.m; sourceTree = "<group>"; };
+		FDD934CA1D51EA4E00C1A04D /* JTSImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageInfo.h; sourceTree = "<group>"; };
+		FDD934CB1D51EA4E00C1A04D /* JTSImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageInfo.m; sourceTree = "<group>"; };
+		FDD934CC1D51EA4E00C1A04D /* JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSImageViewController.h; sourceTree = "<group>"; };
+		FDD934CD1D51EA4E00C1A04D /* JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSImageViewController.m; sourceTree = "<group>"; };
+		FDD934CE1D51EA4E00C1A04D /* JTSSimpleImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSSimpleImageDownloader.h; sourceTree = "<group>"; };
+		FDD934CF1D51EA4E00C1A04D /* JTSSimpleImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSSimpleImageDownloader.m; sourceTree = "<group>"; };
+		FDD934D01D51EA4E00C1A04D /* UIApplication+JTSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JTSImageViewController.h"; sourceTree = "<group>"; };
+		FDD934D11D51EA4E00C1A04D /* UIApplication+JTSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JTSImageViewController.m"; sourceTree = "<group>"; };
+		FDD934D21D51EA4E00C1A04D /* UIImage+JTSImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTSImageEffects.h"; sourceTree = "<group>"; };
+		FDD934D31D51EA4E00C1A04D /* UIImage+JTSImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTSImageEffects.m"; sourceTree = "<group>"; };
+		FDD934D51D51EA4E00C1A04D /* pausebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebutton.png; sourceTree = "<group>"; };
+		FDD934D61D51EA4E00C1A04D /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		FDD934D71D51EA4E00C1A04D /* SCWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWaveformView.h; sourceTree = "<group>"; };
+		FDD934D81D51EA4E00C1A04D /* SCWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWaveformView.m; sourceTree = "<group>"; };
+		FDD934D91D51EA4E00C1A04D /* SYWaveformPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYWaveformPlayerView.h; sourceTree = "<group>"; };
+		FDD934DA1D51EA4E00C1A04D /* SYWaveformPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYWaveformPlayerView.m; sourceTree = "<group>"; };
+		FDD934DD1D51EA4E00C1A04D /* Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tags.h; sourceTree = "<group>"; };
+		FDD934DE1D51EA4E00C1A04D /* Tags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tags.m; sourceTree = "<group>"; };
+		FDD934DF1D51EA4E00C1A04D /* Tags+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tags+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDD934E01D51EA4E00C1A04D /* Tags+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tags+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDD934E11D51EA4E00C1A04D /* TagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagTableViewCell.h; sourceTree = "<group>"; };
+		FDD934E21D51EA4E00C1A04D /* TagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTableViewCell.m; sourceTree = "<group>"; };
+		FDD934E31D51EA4E00C1A04D /* TagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagTableViewCell.xib; sourceTree = "<group>"; };
+		FDD934E41D51EA4E00C1A04D /* TagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
+		FDD934E51D51EA4E00C1A04D /* TagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
+		FDD934E61D51EA4E00C1A04D /* TagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewController.xib; sourceTree = "<group>"; };
+		FDD934E81D51EA4E00C1A04D /* TextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCollectionViewCell.h; sourceTree = "<group>"; };
+		FDD934E91D51EA4E00C1A04D /* TextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCollectionViewCell.m; sourceTree = "<group>"; };
+		FDD934EA1D51EA4E00C1A04D /* TextCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCollectionViewCell.xib; sourceTree = "<group>"; };
+		FDD934EB1D51EA4E00C1A04D /* TitleCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCollectionReusableView.h; sourceTree = "<group>"; };
+		FDD934EC1D51EA4E00C1A04D /* TitleCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCollectionReusableView.m; sourceTree = "<group>"; };
+		FDD934ED1D51EA4E00C1A04D /* TitleCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCollectionReusableView.xib; sourceTree = "<group>"; };
+		FDD934EF1D51EA4E00C1A04D /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexColors.h"; path = "../UIColor+HexColors.h"; sourceTree = "<group>"; };
+		FDD934F01D51EA4E00C1A04D /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexColors.m"; path = "../UIColor+HexColors.m"; sourceTree = "<group>"; };
+		FDD934F11D51EA4E00C1A04D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDD934F21D51EA4E00C1A04D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDD934F31D51EA4E00C1A04D /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDD9347C1D51E9EA00C1A04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338FB88C4A99FAEA88A67890 /* Pods_SmartFoto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50F9E3D9F966DFA5DC6DC49B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAFE58BBB2F7B26203209A44 /* Pods-SmartFoto.debug.xcconfig */,
+				B4A0E3C9B272A9A0FAD80BAC /* Pods-SmartFoto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1E28870D3045AE24F21259D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CE56B2AEFBFC08199B84E /* Pods_SmartFoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDD934761D51E9EA00C1A04D = {
+			isa = PBXGroup;
+			children = (
+				FDD934811D51E9EA00C1A04D /* SmartFoto */,
+				FDD934801D51E9EA00C1A04D /* Products */,
+				50F9E3D9F966DFA5DC6DC49B /* Pods */,
+				C1E28870D3045AE24F21259D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDD934801D51E9EA00C1A04D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9347F1D51E9EA00C1A04D /* SmartFoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDD934811D51E9EA00C1A04D /* SmartFoto */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934BB1D51EA4E00C1A04D /* Services */,
+				FDD9352A1D51ECE600C1A04D /* Cells */,
+				FDD935291D51ECBD00C1A04D /* ViewControllers */,
+				FDD935281D51ECA100C1A04D /* ExternalLibraries */,
+				FDD935271D51EC8100C1A04D /* Database */,
+				FDD934991D51EA4D00C1A04D /* AppDelegate.h */,
+				FDD9349A1D51EA4D00C1A04D /* AppDelegate.m */,
+				FDD9349F1D51EA4D00C1A04D /* BasedViewController.h */,
+				FDD934A01D51EA4D00C1A04D /* BasedViewController.m */,
+				FDD934A41D51EA4D00C1A04D /* GoogleService-Info.plist */,
+				FDD934821D51E9EA00C1A04D /* Supporting Files */,
+			);
+			path = SmartFoto;
+			sourceTree = "<group>";
+		};
+		FDD934821D51E9EA00C1A04D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9349B1D51EA4D00C1A04D /* Assets.xcassets */,
+				FDD9349C1D51EA4D00C1A04D /* Base.lproj */,
+				FDD934931D51E9EA00C1A04D /* Info.plist */,
+				FDD934A81D51EA4D00C1A04D /* main.m */,
+				FDD934AC1D51EA4D00C1A04D /* SmartFoto.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDD9349C1D51EA4D00C1A04D /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9349D1D51EA4D00C1A04D /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		FDD934BB1D51EA4E00C1A04D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934EF1D51EA4E00C1A04D /* UIColor+HexColors.h */,
+				FDD934F01D51EA4E00C1A04D /* UIColor+HexColors.m */,
+				FDD934BC1D51EA4E00C1A04D /* Constant.h */,
+				FDD934BD1D51EA4E00C1A04D /* Constant.m */,
+				FDD934BE1D51EA4E00C1A04D /* HelperServices.h */,
+				FDD934BF1D51EA4E00C1A04D /* HelperServices.m */,
+				FDD934C01D51EA4E00C1A04D /* Services.h */,
+				FDD934C11D51EA4E00C1A04D /* Services.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDD934C71D51EA4E00C1A04D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934C81D51EA4E00C1A04D /* JTSAnimatedGIFUtility.h */,
+				FDD934C91D51EA4E00C1A04D /* JTSAnimatedGIFUtility.m */,
+				FDD934CA1D51EA4E00C1A04D /* JTSImageInfo.h */,
+				FDD934CB1D51EA4E00C1A04D /* JTSImageInfo.m */,
+				FDD934CC1D51EA4E00C1A04D /* JTSImageViewController.h */,
+				FDD934CD1D51EA4E00C1A04D /* JTSImageViewController.m */,
+				FDD934CE1D51EA4E00C1A04D /* JTSSimpleImageDownloader.h */,
+				FDD934CF1D51EA4E00C1A04D /* JTSSimpleImageDownloader.m */,
+				FDD934D01D51EA4E00C1A04D /* UIApplication+JTSImageViewController.h */,
+				FDD934D11D51EA4E00C1A04D /* UIApplication+JTSImageViewController.m */,
+				FDD934D21D51EA4E00C1A04D /* UIImage+JTSImageEffects.h */,
+				FDD934D31D51EA4E00C1A04D /* UIImage+JTSImageEffects.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FDD934D41D51EA4E00C1A04D /* SYWaveformPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934D51D51EA4E00C1A04D /* pausebutton.png */,
+				FDD934D61D51EA4E00C1A04D /* playbutton.png */,
+				FDD934D71D51EA4E00C1A04D /* SCWaveformView.h */,
+				FDD934D81D51EA4E00C1A04D /* SCWaveformView.m */,
+				FDD934D91D51EA4E00C1A04D /* SYWaveformPlayerView.h */,
+				FDD934DA1D51EA4E00C1A04D /* SYWaveformPlayerView.m */,
+			);
+			path = SYWaveformPlayer;
+			sourceTree = "<group>";
+		};
+		FDD935271D51EC8100C1A04D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934AD1D51EA4D00C1A04D /* Photobook.xcdatamodeld */,
+				FDD934AF1D51EA4D00C1A04D /* PhotoSound.h */,
+				FDD934B01D51EA4D00C1A04D /* PhotoSound.m */,
+				FDD934B11D51EA4D00C1A04D /* PhotoSound+CoreDataProperties.h */,
+				FDD934B21D51EA4D00C1A04D /* PhotoSound+CoreDataProperties.m */,
+				FDD934B31D51EA4D00C1A04D /* QueryServices.h */,
+				FDD934B41D51EA4D00C1A04D /* QueryServices.m */,
+				FDD934DD1D51EA4E00C1A04D /* Tags.h */,
+				FDD934DE1D51EA4E00C1A04D /* Tags.m */,
+				FDD934DF1D51EA4E00C1A04D /* Tags+CoreDataProperties.h */,
+				FDD934E01D51EA4E00C1A04D /* Tags+CoreDataProperties.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		FDD935281D51ECA100C1A04D /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934C71D51EA4E00C1A04D /* Source */,
+				FDD934D41D51EA4E00C1A04D /* SYWaveformPlayer */,
+			);
+			name = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		FDD935291D51ECBD00C1A04D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934A91D51EA4D00C1A04D /* MapViewController.h */,
+				FDD934AA1D51EA4D00C1A04D /* MapViewController.m */,
+				FDD934AB1D51EA4D00C1A04D /* MapViewController.xib */,
+				FDD934B51D51EA4E00C1A04D /* ResultViewController.h */,
+				FDD934B61D51EA4E00C1A04D /* ResultViewController.m */,
+				FDD934B71D51EA4E00C1A04D /* ResultViewController.xib */,
+				FDD934B81D51EA4E00C1A04D /* SearchViewController.h */,
+				FDD934B91D51EA4E00C1A04D /* SearchViewController.m */,
+				FDD934BA1D51EA4E00C1A04D /* SearchViewController.xib */,
+				FDD934C21D51EA4E00C1A04D /* SoundDetailViewController.h */,
+				FDD934C31D51EA4E00C1A04D /* SoundDetailViewController.m */,
+				FDD934C41D51EA4E00C1A04D /* SoundRecordViewController.h */,
+				FDD934C51D51EA4E00C1A04D /* SoundRecordViewController.m */,
+				FDD934C61D51EA4E00C1A04D /* SoundRecordViewController.xib */,
+				FDD934E41D51EA4E00C1A04D /* TagViewController.h */,
+				FDD934E51D51EA4E00C1A04D /* TagViewController.m */,
+				FDD934E61D51EA4E00C1A04D /* TagViewController.xib */,
+				FDD934F11D51EA4E00C1A04D /* ViewController.h */,
+				FDD934F21D51EA4E00C1A04D /* ViewController.m */,
+				FDD934F31D51EA4E00C1A04D /* ViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDD9352A1D51ECE600C1A04D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDD934A11D51EA4D00C1A04D /* CollectionViewCell.h */,
+				FDD934A21D51EA4D00C1A04D /* CollectionViewCell.m */,
+				FDD934A31D51EA4D00C1A04D /* CollectionViewCell.xib */,
+				FDD934A51D51EA4D00C1A04D /* HeaderCollectionReusableView.h */,
+				FDD934A61D51EA4D00C1A04D /* HeaderCollectionReusableView.m */,
+				FDD934A71D51EA4D00C1A04D /* HeaderCollectionReusableView.xib */,
+				FDD934E11D51EA4E00C1A04D /* TagTableViewCell.h */,
+				FDD934E21D51EA4E00C1A04D /* TagTableViewCell.m */,
+				FDD934E31D51EA4E00C1A04D /* TagTableViewCell.xib */,
+				FDD934E81D51EA4E00C1A04D /* TextCollectionViewCell.h */,
+				FDD934E91D51EA4E00C1A04D /* TextCollectionViewCell.m */,
+				FDD934EA1D51EA4E00C1A04D /* TextCollectionViewCell.xib */,
+				FDD934EB1D51EA4E00C1A04D /* TitleCollectionReusableView.h */,
+				FDD934EC1D51EA4E00C1A04D /* TitleCollectionReusableView.m */,
+				FDD934ED1D51EA4E00C1A04D /* TitleCollectionReusableView.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDD9347E1D51E9EA00C1A04D /* SmartFoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD934961D51E9EA00C1A04D /* Build configuration list for PBXNativeTarget "SmartFoto" */;
+			buildPhases = (
+				5EEEF628781EB8A102D063A7 /* Check Pods Manifest.lock */,
+				FDD9347B1D51E9EA00C1A04D /* Sources */,
+				FDD9347C1D51E9EA00C1A04D /* Frameworks */,
+				FDD9347D1D51E9EA00C1A04D /* Resources */,
+				9551D9C195B9958D22B3FF22 /* Embed Pods Frameworks */,
+				835C2CE485AFD53EC8345174 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartFoto;
+			productName = SmartFoto;
+			productReference = FDD9347F1D51E9EA00C1A04D /* SmartFoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDD934771D51E9EA00C1A04D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "seta cheam";
+				TargetAttributes = {
+					FDD9347E1D51E9EA00C1A04D = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = E4ABRQ2L83;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = FDD9347A1D51E9EA00C1A04D /* Build configuration list for PBXProject "SmartFoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDD934761D51E9EA00C1A04D;
+			productRefGroup = FDD934801D51E9EA00C1A04D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDD9347E1D51E9EA00C1A04D /* SmartFoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDD9347D1D51E9EA00C1A04D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD935211D51EA4E00C1A04D /* TextCollectionViewCell.xib in Resources */,
+				FDD935261D51EA4E00C1A04D /* ViewController.xib in Resources */,
+				FDD9351C1D51EA4E00C1A04D /* TagTableViewCell.xib in Resources */,
+				FDD934F51D51EA4E00C1A04D /* Assets.xcassets in Resources */,
+				FDD934FF1D51EA4E00C1A04D /* MapViewController.xib in Resources */,
+				FDD935051D51EA4E00C1A04D /* ResultViewController.xib in Resources */,
+				FDD9350D1D51EA4E00C1A04D /* SoundRecordViewController.xib in Resources */,
+				FDD934FC1D51EA4E00C1A04D /* HeaderCollectionReusableView.xib in Resources */,
+				FDD934FA1D51EA4E00C1A04D /* GoogleService-Info.plist in Resources */,
+				FDD934F61D51EA4E00C1A04D /* LaunchScreen.storyboard in Resources */,
+				FDD935151D51EA4E00C1A04D /* playbutton.png in Resources */,
+				FDD935071D51EA4E00C1A04D /* SearchViewController.xib in Resources */,
+				FDD935231D51EA4E00C1A04D /* TitleCollectionReusableView.xib in Resources */,
+				FDD935141D51EA4E00C1A04D /* pausebutton.png in Resources */,
+				FDD934F91D51EA4E00C1A04D /* CollectionViewCell.xib in Resources */,
+				FDD9351E1D51EA4E00C1A04D /* TagViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EEEF628781EB8A102D063A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		835C2CE485AFD53EC8345174 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartFoto/Pods-SmartFoto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9551D9C195B9958D22B3FF22 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartFoto/Pods-SmartFoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDD9347B1D51E9EA00C1A04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD935251D51EA4E00C1A04D /* ViewController.m in Sources */,
+				FDD9351B1D51EA4E00C1A04D /* TagTableViewCell.m in Sources */,
+				FDD934FD1D51EA4E00C1A04D /* main.m in Sources */,
+				FDD9350B1D51EA4E00C1A04D /* SoundDetailViewController.m in Sources */,
+				FDD935021D51EA4E00C1A04D /* PhotoSound+CoreDataProperties.m in Sources */,
+				FDD935161D51EA4E00C1A04D /* SCWaveformView.m in Sources */,
+				FDD9350A1D51EA4E00C1A04D /* Services.m in Sources */,
+				FDD935001D51EA4E00C1A04D /* Photobook.xcdatamodeld in Sources */,
+				FDD9351A1D51EA4E00C1A04D /* Tags+CoreDataProperties.m in Sources */,
+				FDD935091D51EA4E00C1A04D /* HelperServices.m in Sources */,
+				FDD935131D51EA4E00C1A04D /* UIImage+JTSImageEffects.m in Sources */,
+				FDD935011D51EA4E00C1A04D /* PhotoSound.m in Sources */,
+				FDD935171D51EA4E00C1A04D /* SYWaveformPlayerView.m in Sources */,
+				FDD935041D51EA4E00C1A04D /* ResultViewController.m in Sources */,
+				FDD935111D51EA4E00C1A04D /* JTSSimpleImageDownloader.m in Sources */,
+				FDD9351D1D51EA4E00C1A04D /* TagViewController.m in Sources */,
+				FDD9350E1D51EA4E00C1A04D /* JTSAnimatedGIFUtility.m in Sources */,
+				FDD935081D51EA4E00C1A04D /* Constant.m in Sources */,
+				FDD934FB1D51EA4E00C1A04D /* HeaderCollectionReusableView.m in Sources */,
+				FDD934F81D51EA4E00C1A04D /* CollectionViewCell.m in Sources */,
+				FDD935221D51EA4E00C1A04D /* TitleCollectionReusableView.m in Sources */,
+				FDD935031D51EA4E00C1A04D /* QueryServices.m in Sources */,
+				FDD934FE1D51EA4E00C1A04D /* MapViewController.m in Sources */,
+				FDD934F71D51EA4E00C1A04D /* BasedViewController.m in Sources */,
+				FDD9350F1D51EA4E00C1A04D /* JTSImageInfo.m in Sources */,
+				FDD935061D51EA4E00C1A04D /* SearchViewController.m in Sources */,
+				FDD9350C1D51EA4E00C1A04D /* SoundRecordViewController.m in Sources */,
+				FDD935201D51EA4E00C1A04D /* TextCollectionViewCell.m in Sources */,
+				FDD935101D51EA4E00C1A04D /* JTSImageViewController.m in Sources */,
+				FDD934F41D51EA4E00C1A04D /* AppDelegate.m in Sources */,
+				FDD935121D51EA4E00C1A04D /* UIApplication+JTSImageViewController.m in Sources */,
+				FDD935241D51EA4E00C1A04D /* UIColor+HexColors.m in Sources */,
+				FDD935191D51EA4E00C1A04D /* Tags.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDD9349D1D51EA4D00C1A04D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD9349E1D51EA4D00C1A04D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDD934941D51E9EA00C1A04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDD934951D51E9EA00C1A04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDD934971D51E9EA00C1A04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFE58BBB2F7B26203209A44 /* Pods-SmartFoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hemy Ros (3SLGB8QE9Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E4ABRQ2L83;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = SmartFoto/SmartFoto.pch;
+				INFOPLIST_FILE = SmartFoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotobook.smartfotobook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6c0ef3fc-58a9-4c65-84ea-b5423251b9d6";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development Profile";
+			};
+			name = Debug;
+		};
+		FDD934981D51E9EA00C1A04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A0E3C9B272A9A0FAD80BAC /* Pods-SmartFoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = TM4GCXFS5Z;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = SmartFoto/SmartFoto.pch;
+				INFOPLIST_FILE = SmartFoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotobook.smartfotobook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b7749a8d-190e-44b5-9396-46bb15f5434f";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: *";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDD9347A1D51E9EA00C1A04D /* Build configuration list for PBXProject "SmartFoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD934941D51E9EA00C1A04D /* Debug */,
+				FDD934951D51E9EA00C1A04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDD934961D51E9EA00C1A04D /* Build configuration list for PBXNativeTarget "SmartFoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD934971D51E9EA00C1A04D /* Debug */,
+				FDD934981D51E9EA00C1A04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDD934AD1D51EA4D00C1A04D /* Photobook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDD934AE1D51EA4D00C1A04D /* Photobook.xcdatamodel */,
+			);
+			currentVersion = FDD934AE1D51EA4D00C1A04D /* Photobook.xcdatamodel */;
+			path = Photobook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDD934771D51E9EA00C1A04D /* Project object */;
+}

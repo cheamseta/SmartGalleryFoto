@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="searchBar" destination="o0B-ud-iLW" id="I3X-dX-Md3"/>
+                <outlet property="tagTableView" destination="oHB-aE-1DI" id="Mz0-GA-aYA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5q-6m-pTM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0B-ud-iLW">
+                            <rect key="frame" x="0.0" y="24" width="600" height="44"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="4E9-hc-iBt"/>
+                            </constraints>
+                            <color key="tintColor" red="0.36745648784026635" green="0.79799325980392155" blue="0.3972179118218413" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="o0B-ud-iLW" firstAttribute="leading" secondItem="Q5q-6m-pTM" secondAttribute="leading" id="3ab-EC-iog"/>
+                        <constraint firstAttribute="trailing" secondItem="o0B-ud-iLW" secondAttribute="trailing" id="M3a-Za-ekG"/>
+                        <constraint firstItem="o0B-ud-iLW" firstAttribute="top" secondItem="Q5q-6m-pTM" secondAttribute="top" constant="24" id="mvd-Lb-i7l"/>
+                        <constraint firstAttribute="height" constant="68" id="v9E-K7-pHq"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-aE-1DI">
+                    <rect key="frame" x="0.0" y="69" width="600" height="531"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Q5q-6m-pTM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K3f-XI-QgT"/>
+                <constraint firstAttribute="trailing" secondItem="oHB-aE-1DI" secondAttribute="trailing" id="KFB-3a-xeJ"/>
+                <constraint firstItem="oHB-aE-1DI" firstAttribute="top" secondItem="Q5q-6m-pTM" secondAttribute="bottom" constant="1" id="WMh-cB-7uB"/>
+                <constraint firstAttribute="bottom" secondItem="oHB-aE-1DI" secondAttribute="bottom" id="ddX-LI-MDG"/>
+                <constraint firstItem="oHB-aE-1DI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iHu-tr-dzm"/>
+                <constraint firstItem="Q5q-6m-pTM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oKh-Mb-FVH"/>
+                <constraint firstAttribute="trailing" secondItem="Q5q-6m-pTM" secondAttribute="trailing" id="tkG-HP-Wxj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

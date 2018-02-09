@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagViewController">
+            <connections>
+                <outlet property="TagHolderView" destination="FvQ-QP-ghO" id="e5r-M3-Cyh"/>
+                <outlet property="addTagView" destination="tAp-xZ-C6j" id="OdN-Jm-tG9"/>
+                <outlet property="photoImageView" destination="kHe-qc-aVm" id="fVy-wH-uDr"/>
+                <outlet property="tagCollectionView" destination="lqr-3b-L9b" id="AtI-F7-b9N"/>
+                <outlet property="tagTextField" destination="ZrO-Eh-l88" id="h1F-Xy-EXe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kHe-qc-aVm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="408"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lqr-3b-L9b">
+                    <rect key="frame" x="0.0" y="408" width="600" height="192"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="192" id="AUb-oy-hca"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xcg-ec-eCA">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lqr-3b-L9b" secondAttribute="trailing" id="3ml-on-ntX"/>
+                <constraint firstItem="lqr-3b-L9b" firstAttribute="top" secondItem="kHe-qc-aVm" secondAttribute="bottom" id="BVa-TW-6PC"/>
+                <constraint firstAttribute="trailing" secondItem="kHe-qc-aVm" secondAttribute="trailing" id="U1U-Dv-VTE"/>
+                <constraint firstItem="lqr-3b-L9b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZBd-KW-6ZH"/>
+                <constraint firstAttribute="bottom" secondItem="lqr-3b-L9b" secondAttribute="bottom" id="edn-Rg-1TV"/>
+                <constraint firstItem="kHe-qc-aVm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j2e-Xb-Q23"/>
+                <constraint firstItem="kHe-qc-aVm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ujx-Sv-hSg"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="tAp-xZ-C6j">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvQ-QP-ghO">
+                    <rect key="frame" x="156" y="60" width="288" height="129"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXz-19-W2z">
+                            <rect key="frame" x="32" y="91" width="112" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelTagAction:" destination="-1" eventType="touchUpInside" id="rbK-PM-HsC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1E-Uv-hUA">
+                            <rect key="frame" x="144" y="91" width="112" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="Add"/>
+                            <connections>
+                                <action selector="addTagAction:" destination="-1" eventType="touchUpInside" id="COh-dA-OP2"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Maximum 18 characters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZrO-Eh-l88">
+                            <rect key="frame" x="20" y="47" width="248" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-JF-4oT">
+                            <rect key="frame" x="96" y="18" width="96" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tags" translatesAutoresizingMaskIntoConstraints="NO" id="QfD-Nk-ONm">
+                            <rect key="frame" x="81" y="21" width="15" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="129" id="vcH-fm-KtA"/>
+                        <constraint firstAttribute="width" constant="288" id="yTP-C7-wca"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.328125" green="0.328125" blue="0.328125" alpha="0.81145432692307695" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FvQ-QP-ghO" firstAttribute="centerX" secondItem="tAp-xZ-C6j" secondAttribute="centerX" id="VWp-xI-geI"/>
+                <constraint firstItem="FvQ-QP-ghO" firstAttribute="centerY" secondItem="tAp-xZ-C6j" secondAttribute="centerY" constant="-175.5" id="cr0-ah-HEo"/>
+            </constraints>
+            <point key="canvasLocation" x="430" y="-356"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Tags" width="28" height="28"/>
+    </resources>
+</document>
